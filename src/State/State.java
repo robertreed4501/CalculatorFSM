@@ -27,7 +27,7 @@ public abstract class State {
         if (charAtIndex == '-'){
             if (statement.charAt(index + 1) == ' '){
                 current = operator;
-            }
+            }else current = operand;
             return;
         }
         if (charAtIndex == '+' || charAtIndex == '-' || charAtIndex == '*' || charAtIndex == '/') current = operator;

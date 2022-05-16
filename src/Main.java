@@ -1,8 +1,5 @@
 import Model.ElementStack;
-import State.CalculateState;
-import State.OperandState;
-import State.OperatorState;
-import State.State;
+import State.*;
 
 import java.util.Scanner;
 

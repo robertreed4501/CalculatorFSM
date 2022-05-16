@@ -3,7 +3,6 @@ package State;
 import Model.ElementStack;
 import Model.Operand;
 
-
 public class OperandState extends State{
 
 
