@@ -1,7 +1,5 @@
 package State;
 
-import java.util.regex.Pattern;
-
 public abstract class State {
 
     public static State operand, operator, calculate, current;
@@ -21,8 +19,7 @@ public abstract class State {
             current = calculate;
             return;
         }
-        String nextItem = statement.substring(index, nextSpace).trim();
-        Pattern opPat = Pattern.compile("^\\[+-*/]{1}$");
+
         char charAtIndex = statement.charAt(index);
         if (charAtIndex == '-'){
             if (statement.charAt(index + 1) == ' '){

@@ -107,18 +107,4 @@ public class ElementStack {
         }
         return maxPrec;
     }
-
-    private int[] generateMap(int maxPrec){
-        int[] map = new int[stack.size()/2];
-        int count = 0;
-        for (int i = maxPrec; i > 0; i--){
-            for (int j = 1; j < stack.size(); j += 2){
-                if (((Operator)stack.get(j)).getPrecedence() == i){
-                    map[count++] = j;
-                }
-            }
-        }
-        return map;
-    }
-
 }
